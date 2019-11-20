@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            app:startDestination="@+id/search"
+            android:id="@+id/navigation">
+
+    <fragment android:id="@+id/search"
+              android:name="com.bolaware.movieproapp.MoviesFragment"
+              android:label="fragment_movies"
+              tools:layout="@layout/fragment_main">
+
+        <action android:id="@+id/action_search_scren_to_detail"
+                app:destination="@+id/movie_detail"/>
+
+    </fragment>
+
+
+    <fragment android:id="@+id/movie_detail"
+              android:name="com.bolaware.movieproapp.MoviesDetailsFragment"
+              android:label="fragment_movies_details"
+              tools:layout="@layout/fragment_movies_details">
+        <argument android:name="extra trans name" app:argType="string" app:nullable="true"/>
+    </fragment>
+
+</navigation>

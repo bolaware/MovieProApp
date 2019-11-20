@@ -1,0 +1,46 @@
+apply plugin: 'kotlin'
+
+ext {
+    kotlinVersion = '1.3.31'
+    javaxInjectVersion = '1'
+    gsonVersion = '2.8.6'
+
+    javaxInjectVersion = '1'
+    javaxAnnotationVersion = '1.0'
+    javaxInjectVersion = '1'
+    rxAndroidVersion = '2.1.0'
+    rxJavaVersion = '2.1.0'
+
+    jUnitVersion = '4.12'
+    assertJVersion = '3.8.0'
+    mockitoKotlinVersion = '1.5.0'
+    konveyorVersion = '1.0.3'
+}
+
+
+dependencies {
+    //kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:${kotlinVersion}"
+
+    //gson
+    implementation "com.google.code.gson:gson:${gsonVersion}"
+
+    //inject
+    implementation "javax.inject:javax.inject:${javaxInjectVersion}"
+
+    //rxJava
+    implementation "javax.annotation:jsr250-api:${javaxAnnotationVersion}"
+    implementation "io.reactivex.rxjava2:rxkotlin:${rxJavaVersion}"
+    implementation "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}"
+
+    //mockito
+    testImplementation "junit:junit:${jUnitVersion}"
+    testImplementation "com.nhaarman:mockito-kotlin:${mockitoKotlinVersion}"
+    testImplementation "org.assertj:assertj-core:${assertJVersion}"
+
+    //konveyor
+    implementation "com.github.vacxe:konveyor:${konveyorVersion}"
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"

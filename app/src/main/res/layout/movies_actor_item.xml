@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:layout_margin="6dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+
+    <ImageView
+            android:id="@+id/actorDisplayIV"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+
+    <TextView
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:id="@+id/nameTV"
+            tools:text="Bolaji Kassim"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>
